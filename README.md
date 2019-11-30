@@ -4,6 +4,11 @@ process to know knative
 ## Step 1: What is Knative? 
 Official docs: https://knative.dev/
 
+- Building: something that helps you in DevOps. Tekton Pipeline instead of Knative Building.
+- Serving(Core): add queue-proxy to your pod and use hpa to autoscale your app. It will manage your revisions and routes by the ingress(Istio, Gloo).
+- Eventing: help you build complex business logics.
+
+
 ## Step 2: Prepare Yourself for Knative
 Learning Path:  Docker -> Kubernetes -> Istio -> Knative
 [Serverless CNCF Whitepaper](https://github.com/cncf/wg-serverless/blob/master/whitepapers/serverless-overview/cncf_serverless_whitepaper_v1.0.pdf)
@@ -15,7 +20,7 @@ Learning Path:  Docker -> Kubernetes -> Istio -> Knative
 [Google Cloud Run](https://cloud.google.com/run/) is [GA](https://cloud.google.com/blog/products/serverless/knative-based-cloud-run-services-are-ga) in November 15, 2019.
 Openshift Serverless Support: https://www.openshift.com/learn/topics/serverless
 
-## Step 4: Create your apps
+## Step 4: Create your apps(Serving)
 Official Samples
 https://github.com/knative/docs/tree/master/docs/serving/samples
 
@@ -28,7 +33,9 @@ Knative: Scaling From 0 to Infinity - Joseph Burnett & Mark Chmarny, Google: htt
 T-Mobile Store Locator Serverless Journey with Knative and Kubernetes - Ram Gopinathan, T-Mobile: https://www.youtube.com/watch?v=qzPG4O-DhYw&feature=youtu.be&t=617
 
 ## Step 5: Learn how knative get you there.
-https://github.com/knative
+- knative org: https://github.com/knative
+- Tekton Pipeline https://github.com/tektoncd/pipeline
+
 
 ## Step 6: Tips
 For instance: https://github.com/cppforlife/knctl/blob/master/docs/kubectl-plugin.md
